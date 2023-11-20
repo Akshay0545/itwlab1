@@ -1,0 +1,49 @@
+->Making folder
+mkdir labexam3
+
+->entering into folder
+$ cd labexam3
+
+-->making file numbers.sh
+$ cat>>numbers.sh
+12
+23
+34
+12
+56
+23
+89
+56
+78
+12
+
+->changing mode to execution
+$ chmod +x  numbers.sh
+
+->sorting numbers
+$ sort -n numbers.sh
+12
+12
+12
+23
+23
+34
+56
+56
+78
+89
+
+->sorting with unique numbers
+$ sort numbers.sh | uniq
+
+->creating new file output
+cat>>output.sh
+
+->changing execution mode
+$ chmod +x numbers.sh
+
+->saving sorted output of the numbers.sh file to the output.sh
+$ sort -n numbers.sh | tee output.sh
+
+->counting number of elements in the numbers.sh fole
+$ wc -l numbers.sh
